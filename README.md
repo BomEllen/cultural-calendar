@@ -1,16 +1,14 @@
-# Culture Callender_ 🇰🇷 and 🇻🇳
+# Cultural Calendar_ 🇰🇷 and 🇻🇳
 <br/>
 
 
 
 ## :calendar: Project Name
-
-Culture Callender  
+Cultural Calendar  
 <br/> 
 
 
 ## :calendar: Project Introduction
-
 This is a calendar of cultural events in Korea and Vietnam produced by students from Daejin University in Korea and Duy Tan University in Vietnam.
 <br/><br/> 
 
