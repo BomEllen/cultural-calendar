@@ -11,7 +11,7 @@ class MyCalendar extends Component {
                     plugins={[ dayGridPlugin ]}  // 플러그인 넣어 주고
                     events = {[
                         {title: '추석', date: '2023-11-04'},
-                        {title: '크리스마스', date: '2023-12-25'}   // 이벤트는 배열로 하드코딩
+                        {title: '크리스마스', date: '2023-12-25'}   // 이벤트는 배열로 하드코딩했음
                     ]}
                 />
             </div>
