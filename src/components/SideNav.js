@@ -14,12 +14,12 @@ function SideNav() {
             {
                 title: 'Home',
                 itemId: '/dashboard',
-                elemBefore: () => <>🏠</>, // Text emoji representing an inbox
+                elemBefore: () => <>🏠</>, 
             },
             {
                 title: 'Food',
                 itemId: '/management',
-                elemBefore: () => <>🥘</>, // Text emoji representing users
+                elemBefore: () => <>🥘</>, 
                 subNav: [
                 {
                     title: 'January 1 - Newyears Day',
