@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
+import styled from "styled-components";
 
 class MyCalendar extends Component {
     render() {
         return (
-            <div className="App">
+            <Container>
                 <FullCalendar 
                     defaultView="dayGridMonth" // 풀캘린더 라이브러리 테마 타입 설정
                     plugins={[ dayGridPlugin ]}  // 플러그인 넣어 주고
@@ -15,8 +16,14 @@ class MyCalendar extends Component {
                         {title: '7시 베트남 보고', date: '2023-11-20'}   // 이벤트는 배열로 하드코딩했음
                     ]}
                 />
-            </div>
+            </Container>
         );
     }
 }
+
+const Container = styled.div`
+    text-align: center;
+`
+
+
 export default MyCalendar;
