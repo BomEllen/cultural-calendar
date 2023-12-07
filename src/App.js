@@ -13,10 +13,11 @@ import styled from 'styled-components';
 
 function App() {
   return (
+    
     <Layout>
       <Container fluid>
         <Innerlayout>
-            <Col xs={3}>{<SideNav />}</Col>
+            <ColStyle xs={3}>{<SideNav />}</ColStyle>
             <Col>{<MyCalendar />}</Col>
         </Innerlayout>
         </Container>
@@ -28,8 +29,11 @@ function App() {
 const Layout = styled.div`
   text-align: center;
 `;
-const Innerlayout = styled(Row)`  //상속해서 라이브러리 스타일 바꾸기 
+const Innerlayout = styled(Row)`  // 상속해서 라이브러리 스타일 바꾸기 
   height: 100vh;
+`;
+const ColStyle = styled(Col)`     // 사이드바
+  background-color: #832447;
 `;
 
 export default App;

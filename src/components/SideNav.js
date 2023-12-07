@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navigation } from 'react-minimal-side-navigation';
 import 'react-minimal-side-navigation/lib/ReactMinimalSideNavigation.css';
+import styled from 'styled-components';
 
 function SideNav() {
     return (
@@ -51,5 +52,6 @@ function SideNav() {
         </>
     );
 }
+
 
 export default SideNav;
