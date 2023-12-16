@@ -1,5 +1,5 @@
 import './components/global.css'
-import MyCalendar from './components/MyCalendar';
+import MyCalendar from './components/calendar/MyCalendar';
 import SideNav from './components/SideNav';
 import 'bootstrap/dist/css/bootstrap.min.css'; // 부트스트랩 import
 
@@ -12,6 +12,7 @@ import styled from 'styled-components';
 
 
 function App() {
+
   return (
     
     <Layout>
