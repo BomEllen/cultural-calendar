@@ -75,6 +75,7 @@ const MyContainer = styled.div`
     width: 70%;
     position: absolute;
     right: 3%;
+    margin: 30px 0 30px 0;
 `;
 const MyCard = styled(Card)`
     &:hover{
