@@ -44,9 +44,13 @@ const Layout = styled.div`
 `;
 const Innerlayout = styled(Row)`  // 상속해서 라이브러리 스타일 바꾸기 
   height: 100vh;
+  
 `;
 const ColStyle = styled(Col)`     // 사이드바
   background-color: #d9dda1;
+  position: fixed;
+  height: 100vh;
+  z-index: 10;
 `;
 
 export default App;

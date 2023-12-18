@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
+import styled from 'styled-components';
 
 function HolidayFood() {
   // 카드에 표시될 데이터 배열
@@ -19,7 +20,7 @@ function HolidayFood() {
         {
             title: '팥죽 (KOREA)',
             date: 'December 22nd',
-            text: '팥을 주재료로 하여 만든 죽. 동지날 액운을 쫓아내기 위해 팥죽을 먹는 풍속이 있다.',
+            text: '팥이 주재료인 죽. 동지날 액운을 쫓아내기 위해 팥죽을 먹는 풍속이 있다.',
             image: 'https://i.ibb.co/Dffq0QT/pat.jpg',
         },
         {
@@ -42,28 +43,42 @@ function HolidayFood() {
     ];
 
     return (
-        <Row xs={1} md={3} className="g-4">
-        {cardData.map((data, idx) => (
-            <Col key={idx}>
-            <Card style={{ borderWidth: '3px', borderColor: '#9EC396'}}>
-                {/* 이미지 부분 */}
-            {data.image && (
-                <Card.Img
-                    variant="top"
-                    src={data.image}
-                    style={{ width: '100%', height: '200px', objectFit: 'cover' }}
-                />
-            )}
-                <Card.Body>
-                <Card.Title style={{color: '#37662d', fontWeight: 'bold'}}>{data.title}</Card.Title>
-                <Card.Text style={{color: '#ee8989'}}>{data.date}</Card.Text>
-                <Card.Text>{data.text}</Card.Text>
-                </Card.Body>
-            </Card>
-            </Col>
-        ))}
-        </Row>
+        <MyContainer>
+            <Row xs={1} md={3} className="g-4">
+                    {cardData.map((data, idx) => (
+                        <Col key={idx}>
+                        <MyCard style={{ borderWidth: '2px', borderColor: '#9EC396', backgroundColor: '#f0f5db'}}>
+                            {/* 이미지 부분 */}
+                        {data.image && (
+                            <Card.Img
+                                variant="top"
+                                src={data.image}
+                                style={{ width: '100%', height: '200px', objectFit: 'cover' }}
+                            />
+                        )}
+                            <Card.Body>
+                            <Card.Title style={{color: '#37662d', fontWeight: 'bold'}}>{data.title}</Card.Title>
+                            <Card.Text style={{color: '#ee8989'}}>{data.date}</Card.Text>
+                            <Card.Text>{data.text}</Card.Text>
+                            </Card.Body>
+                        </MyCard>
+                        </Col>
+                    ))}
+            </Row>
+        </MyContainer>
     );
 }
 
 export default HolidayFood;
+
+const MyContainer = styled.div`
+    width: 70%;
+    position: absolute;
+    right: 3%;
+`;
+const MyCard = styled(Card)`
+    &:hover{
+        transition: transform 0.1s linear;
+        transform: translate(10px, 10px);
+        }
+`

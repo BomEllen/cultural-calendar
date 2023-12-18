@@ -120,7 +120,9 @@ const EventColors = {
 
 const CalendarContainer = styled.div`
     text-align: center;
-
+    width: 70%;
+    position: absolute;
+    right: 3%;
     .fc-event {
         background-color: ${EventColors.green};
         border-color: ${EventColors.green};
