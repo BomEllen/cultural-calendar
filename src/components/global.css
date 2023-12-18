@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'JeonjuCraftGoR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/JeonjuCraftGoR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 칼럼 타이틀용 */
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+.jejumyeongjo * { 
+    font-family: 'Jeju Myeongjo', serif;
+} 
+
+
+/* 전체 적용 css */
+*{
+    font-family: 'JeonjuCraftGoR';
+}

@@ -99,7 +99,7 @@ class MyCalendar extends Component {
                         <Button variant="secondary" onClick={this.closeModal}>
                             닫기
                         </Button>
-                        <Button variant="primary" onClick={this.addEvent}>
+                        <Button style={{backgroundColor:"#d9dda1", color:"#2d2e27"}}variant="primary" onClick={this.addEvent}>
                             일정 추가
                         </Button>
                     </Modal.Footer>

@@ -53,7 +53,7 @@ function HolidayFood() {
                             <Card.Img
                                 variant="top"
                                 src={data.image}
-                                style={{ width: '100%', height: '200px', objectFit: 'cover' }}
+                                style={{ width: '100%', height: '190px', objectFit: 'cover' }}
                             />
                         )}
                             <Card.Body>

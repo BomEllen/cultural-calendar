@@ -5,7 +5,7 @@ function KoreaTips() {
     return (
         <Container>
             <Header>
-                <p>한국 여행, 이것만 알면 OK!</p>
+                <p>한국 여행, 이것만 알고 떠나요✈️</p>
             </Header>
             <Content>
                 <p> &emsp; 한국은 세계적인 관광지로, 매년 많은 외국인들이 방문하고 있습니다. 
@@ -51,7 +51,7 @@ function KoreaTips() {
 }
 
 
-const backgroundImageUrl = 'https://i.ibb.co/D1MBR5s/korea.jpg';
+const backgroundImageUrl = 'https://i.ibb.co/7ks37c5/korea.jpg';
 
 const Container = styled.div`
     display: flex;
@@ -77,7 +77,7 @@ const Header = styled.div`
     position: absolute;
     width: 100%;
     height: 300px;
-    font-size: 43px;
+    font-size: 53px;
     text-shadow: 1px 1px 1px #464646;
 `;
 
