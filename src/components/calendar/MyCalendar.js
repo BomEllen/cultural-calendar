@@ -7,8 +7,6 @@ import interactionPlugin from '@fullcalendar/interaction';
 import { Modal, Button, Form } from 'react-bootstrap';
 
 
-
-
 class MyCalendar extends Component {
 
     // 생성자에서 modalShow 초기화
@@ -67,8 +65,7 @@ class MyCalendar extends Component {
 
     render() {
         return (
-            <Container>
-
+            <CalendarContainer>
                 {/* FullCalendar 컴포넌트 */}
                 <FullCalendar 
                     defaultView="dayGridMonth" // 풀캘린더 라이브러리 테마 타입 설정
@@ -87,7 +84,7 @@ class MyCalendar extends Component {
                         {this.state.selectedDate && (
                         <div>
                             <Form.Group controlId="formEventTitle">
-                            <Form.Label>✅일정 추가</Form.Label>
+                            <Form.Label>✅일정 추가✅</Form.Label>
                             <Form.Control
                                 type="text"
                                 placeholder="추가할 일정을 입력해주세요"
@@ -108,14 +105,32 @@ class MyCalendar extends Component {
                     </Modal.Footer>
                 </Modal>
 
-            </Container>
+            </CalendarContainer>
         );
     }
 }
 
-const Container = styled.div`
+
+
+const EventColors = {
+    green: '#9EC396',
+    red: '#fc6767',
+    text: '#2F4858',
+}; //색상 지정해둠
+
+const CalendarContainer = styled.div`
     text-align: center;
-`
+
+    .fc-event {
+        background-color: ${EventColors.green};
+        border-color: ${EventColors.green};
+    }
+
+    .fc-event-title {
+        color: ${EventColors.text}; // 일정 제목의 색상
+        font-weight: bold;
+    }
+`;
 
 
 export default MyCalendar;
