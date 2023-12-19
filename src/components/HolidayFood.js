@@ -69,8 +69,6 @@ function HolidayFood() {
     );
 }
 
-export default HolidayFood;
-
 const MyContainer = styled.div`
     width: 70%;
     position: absolute;
@@ -83,3 +81,6 @@ const MyCard = styled(Card)`
         transform: translate(10px, 10px);
         }
 `
+
+export default HolidayFood;
+

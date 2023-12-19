@@ -16,9 +16,20 @@ class MyCalendar extends Component {
             selectedDate: null, //선택된 날짜 상태 저장
             newEventTitle: '',  // 사용자가 추가한 이벤트 추적 state
             events: [  // 이벤트는 여기에 저장
-                {title: '다이어리 배송', date: '2023-11-04'},
-                {title: '크리스마스', date: '2023-12-25'},
-                {title: '7시 베트남 보고', date: '2023-11-20'},   // 이벤트는 배열로 하드코딩했음
+                {title: 'KR,VN_설날', date: '2023-01-01'},
+                {title: 'KR,VN_크리스마스', date: '2023-12-25'},
+                {title: 'VN_Tết절', date: '2023-12-23'},
+                {title: 'VN_웅왕 탄일', date: '2023-03-10'},
+                {title: 'VN_통일의 날', date: '2023-04-30'},
+                {title: 'VN_노동절', date: '2023-05-01'},
+                {title: 'VN_국경일', date: '2023-09-02'},
+                {title: 'KR_삼일절', date: '2023-03-01'},
+                {title: 'KR_어린이날', date: '2023-05-05'},
+                {title: 'KR_부처님 오신날', date: '2023-05-27'},
+                {title: 'KR_현충일', date: '2023-06-06'},
+                {title: 'KR_광복절', date: '2023-08-15'},
+                {title: 'KR_개천절', date: '2023-10-03'},
+                {title: 'KR_한글날', date: '2023-10-09'},
             ],
         };
     }
